@@ -1,0 +1,140 @@
+@media screen and (max-width: 1422px) {
+  .corporate-form {
+    margin: 0 1em;
+  }
+  .quote_corporate {
+    margin-left: 1em;
+  }
+}
+
+@media screen and (max-width: 1600px) {
+  ._wPDyp {
+    width: 70px;
+  }
+}
+
+@media screen and (max-width: 1104px) {
+  .instagram {
+    margin: 2em 3em;
+  }
+  .middle-component {
+    margin: 0 5em;
+  }
+  .posts-let {
+    font-weight: bold;
+    padding: 1em !important;
+    color: white;
+    margin: 0;
+    margin-left: 15px;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .contact-form-row {
+    margin-left: 5rem;
+    margin-right: 5rem;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  
+  .navbar-expand-lg{
+    justify-content: space-between;
+  }
+}
+
+@media screen and (max-width: 901px) {
+  .posts-let {
+    font-weight: bold;
+    padding: 0;
+    color: white;
+    margin: 0;
+    margin-left: 15px;
+    margin-bottom: 25px;
+    margin-top: 25px;
+  }
+  .middle-subscribe {
+    margin: 3em;
+  }
+}
+
+@media screen and (max-width: 840px) {
+  .posts-let {
+    font-weight: bold;
+    padding: 0;
+    color: white;
+    margin: 0;
+    margin-left: 15px;
+    margin-bottom: 25px;
+    margin-top: 25px;
+  }
+  .middle-subscribe {
+    margin: 1em;
+  }
+  .middle-component {
+    margin: 13em;
+    margin-bottom: 3em;
+    margin-top: 3em;
+  }
+  .instagram {
+    margin: 1em;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .contact-form-row {
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  #one {
+    float: none;
+    margin-right: 0;
+    width: auto;
+    border: 0;
+    border-bottom: 2px solid #000;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .row-about {
+    flex-direction: column;
+  }
+  .contact-form-row {
+    margin: 0;
+    padding: 0;
+  }
+  .middle-component {
+    margin: 0;
+    padding: 0;
+  }
+  .middle-col {
+    background-color: #5fd9c9;
+    margin: 5em;
+  }
+  .about-middle {
+    background-color: #fef2f0;
+    margin: 10px 1em !important;
+    padding: 0;
+    .title {
+      font-size: 2em;
+      font-weight: bolder;
+      margin-bottom: 15px;
+    }
+    .image-col {
+      margin-right:0 !important;
+      margin-top: 0 !important;
+    }
+    .text-col{
+      padding-right: 0;
+      margin: 0 !important;
+    }
+    .image{
+      height: 100%;
+      width: 100%;
+    }
+  }
+  
+}

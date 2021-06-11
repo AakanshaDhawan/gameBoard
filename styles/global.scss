@@ -1,0 +1,146 @@
+@import "./bootstrap-config.scss";
+
+$footer-height: 60px;
+$header-height: 100px;
+
+.navbar-expand-lg {
+  justify-content: center;
+}
+.navbar-collapse {
+  flex-grow: 0;
+}
+.content-area {
+  min-height: calc(100vh - #{$footer-height} - #{$header-height});
+}
+.header {
+  padding: 0 6em;
+  background-color: #f1f1f1;
+  .active {
+    background-color: grey;
+    color: white !important;
+  }
+}
+
+.header-menu {
+  font-weight: bold;
+  font-size: 24px;
+  border-left: 1px solid white;
+  color: black !important;
+  &:hover {
+    background-color: grey;
+    color: white;
+  }
+}
+.header-menu:nth-last-child(1) {
+  border-right: 1px solid white;
+}
+
+.carousel-image {
+  margin-left: 5px;
+  min-width: 100%;
+  min-height: 100%;
+  width: 600px;
+  height: 600px;
+}
+
+.middle-col {
+  background-color: #5fd9c9;
+  margin: 5em;
+  margin-left: 10em;
+}
+
+.middle-component {
+  display: flex;
+  .middle-subscribe {
+    margin: 4em 10em;
+    background-color: #008080;
+    .subcribe-form {
+      padding: 0 3em;
+      .subcribe-form-field {
+        background-color: #008080;
+        border: none;
+        border-radius: 0;
+        border-bottom: 2px solid white;
+        color: white;
+        &:hover {
+          border-bottom: 2px solid black;
+        }
+        &:focus {
+          border: none;
+          border-bottom: 2px solid black;
+          box-shadow: none;
+        }
+      }
+    }
+    .subcribe-form-button {
+      border-radius: 0;
+      font-weight: bold;
+      padding: 5px 4em;
+      margin-top: 2em;
+      background-color: white;
+      color: #9e4c31;
+      border: 1px solid white;
+    }
+  }
+  .posts-let {
+    padding: 2em 3em;
+    font-weight: bold;
+    color: white;
+  }
+
+  .instagram {
+    margin: 5em 10em;
+    ._wPDyp {
+      flex-basis: calc(100% / 3 - 10px);
+    }
+  }
+}
+.contact {
+  .container {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.contact-form-row {
+  margin: 2em 7em;
+  .contact-form-field {
+    background-color: #f3e0d8;
+    border: none;
+    border-radius: 0;
+    margin-bottom: 1em;
+    border-bottom: 1px solid black;
+    &:hover {
+      border-bottom: 2px solid #bb5a3a;
+    }
+    &:focus {
+      border: none;
+      border-bottom: 2px solid #bb5a3a;
+      box-shadow: none;
+    }
+  }
+}
+
+.footer {
+  color: white;
+
+  .footer-main {
+    background-color: $primary;
+    padding: 20px 0;
+    .col {
+      justify-content: center;
+      display: flex;
+    }
+    p {
+      margin-bottom: 0;
+    }
+  }
+
+  .footer-secondary {
+    background-color: darken($primary, 5%);
+    font-size: 12px;
+    font-weight: 300;
+    color: darken(white, 30%);
+    padding: 10px 0;
+  }
+}

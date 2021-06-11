@@ -1,0 +1,56 @@
+.quote_corporate {
+  margin: 6em;
+}
+
+.plain_text {
+  margin: 4em;
+}
+
+.corporate-form {
+  margin-right: 2em;
+  h2 {
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+  }
+  .corporate-form-row {
+    margin: 2em;
+    margin-bottom: 5em;
+    .corporate-form-field {
+      background-color: #d9b38c;
+      border: none;
+      border-radius: 0;
+      margin-bottom: 1em;
+      border-bottom: 1px solid black;
+      &:hover {
+        border-bottom: 2px solid #bb5a3a;
+      }
+      &:focus {
+        border: none;
+        border-bottom: 2px solid #bb5a3a;
+        box-shadow: none;
+      }
+    }
+  }
+}
+
+
+.about-middle{
+    margin: 5em;
+    background-color: #fef2f0;
+    .text-col{
+        margin: 4em;
+        .title{
+            margin-top: 1em;
+            font-size: 3rem;
+            font-weight: bold;
+        }
+        p{
+            margin: 1em 0;
+        }
+    }
+    .image-col{
+        margin-top: 15em;
+        margin-right: -20em;
+    }
+}
