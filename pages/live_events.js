@@ -1,5 +1,5 @@
 import DefaultLayout from "components/DefaultLayout";
-import MiddleCorporate from "components/MiddleCorporate";
+import MiddleLive from "components/MiddleLive";
 import Head from "next/head";
 
 export default function CorporateEvents() {
@@ -13,7 +13,7 @@ export default function CorporateEvents() {
           content="width=device-width, initial-scale=0.41, maximum-scale=1"
         />
       </Head>
-      <MiddleCorporate />
+      <MiddleLive />
     </DefaultLayout>
   );
 }

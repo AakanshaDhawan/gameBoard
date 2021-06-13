@@ -2,8 +2,11 @@
   "name": "i-flow-frontend",
   "version": "0.1.0",
   "private": true,
+  "homepage": "http://AakanshaDhawan.github.io/gameBoard",
   "scripts": {
     "dev": "next dev",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "build": "next build",
     "start": "next start"
   },
@@ -12,6 +15,7 @@
     "@fortawesome/free-brands-svg-icons": "^5.15.3",
     "@fortawesome/react-fontawesome": "^0.1.14",
     "bootstrap": "^5.0.1",
+    "gh-pages": "^3.2.0",
     "next": "9.4.4",
     "react": "16.13.1",
     "react-bootstrap": "^1.6.1",

@@ -73,7 +73,7 @@ export default function Carousels() {
         responsive={responsive}
         ssr
         infinite
-        autoPlay
+        // autoPlay
         autoPlaySpeed={2000}
         partialVisible
         infinite={false}

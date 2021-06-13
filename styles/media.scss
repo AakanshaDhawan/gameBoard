@@ -136,5 +136,13 @@
       width: 100%;
     }
   }
-  
+  .live-middle{
+    margin: 4em !important;
+    .instagram-embed{
+      height: 600px !important;
+    iframe{
+      height: 550px !important;
+    }
+    }
+  } 
 }
