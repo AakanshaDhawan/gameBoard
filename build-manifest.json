@@ -1,8 +1,8 @@
 {
   "devFiles": [],
   "lowPriorityFiles": [
-    "static/lXJqPn9-MOsxAPe3yJhqH/_buildManifest.js",
-    "static/lXJqPn9-MOsxAPe3yJhqH/_ssgManifest.js"
+    "static/qRrqRt4IlUjVnwgfhubap/_buildManifest.js",
+    "static/qRrqRt4IlUjVnwgfhubap/_ssgManifest.js"
   ],
   "pages": {
     "/": [
@@ -10,7 +10,7 @@
       "static/chunks/framework.126679bf45d7d49475d8.js",
       "static/chunks/a9a7754c.97b611add67558c1a759.js",
       "static/chunks/commons.b688af42f1fd01bc5e0f.js",
-      "static/chunks/a8c0f242b6e989674b79de59fd1d7a8eead21d19.ac1771cab7bb06e25815.js",
+      "static/chunks/322c84b43ff34968dc74baa653ac2e91af549690.ac1771cab7bb06e25815.js",
       "static/runtime/main-fb5007b5b6c17d1b21de.js"
     ],
     "/_app": [
@@ -36,7 +36,7 @@
       "static/chunks/framework.126679bf45d7d49475d8.js",
       "static/chunks/a9a7754c.97b611add67558c1a759.js",
       "static/chunks/commons.b688af42f1fd01bc5e0f.js",
-      "static/chunks/a8c0f242b6e989674b79de59fd1d7a8eead21d19.ac1771cab7bb06e25815.js",
+      "static/chunks/322c84b43ff34968dc74baa653ac2e91af549690.ac1771cab7bb06e25815.js",
       "static/runtime/main-fb5007b5b6c17d1b21de.js"
     ],
     "/corporate_events": [
@@ -44,7 +44,7 @@
       "static/chunks/framework.126679bf45d7d49475d8.js",
       "static/chunks/a9a7754c.97b611add67558c1a759.js",
       "static/chunks/commons.b688af42f1fd01bc5e0f.js",
-      "static/chunks/a8c0f242b6e989674b79de59fd1d7a8eead21d19.ac1771cab7bb06e25815.js",
+      "static/chunks/322c84b43ff34968dc74baa653ac2e91af549690.ac1771cab7bb06e25815.js",
       "static/runtime/main-fb5007b5b6c17d1b21de.js"
     ],
     "/index": [
@@ -52,7 +52,7 @@
       "static/chunks/framework.126679bf45d7d49475d8.js",
       "static/chunks/a9a7754c.97b611add67558c1a759.js",
       "static/chunks/commons.b688af42f1fd01bc5e0f.js",
-      "static/chunks/a8c0f242b6e989674b79de59fd1d7a8eead21d19.ac1771cab7bb06e25815.js",
+      "static/chunks/322c84b43ff34968dc74baa653ac2e91af549690.ac1771cab7bb06e25815.js",
       "static/runtime/main-fb5007b5b6c17d1b21de.js"
     ],
     "/live_events": [
@@ -60,7 +60,7 @@
       "static/chunks/framework.126679bf45d7d49475d8.js",
       "static/chunks/a9a7754c.97b611add67558c1a759.js",
       "static/chunks/commons.b688af42f1fd01bc5e0f.js",
-      "static/chunks/a8c0f242b6e989674b79de59fd1d7a8eead21d19.ac1771cab7bb06e25815.js",
+      "static/chunks/322c84b43ff34968dc74baa653ac2e91af549690.ac1771cab7bb06e25815.js",
       "static/runtime/main-fb5007b5b6c17d1b21de.js"
     ]
   }
