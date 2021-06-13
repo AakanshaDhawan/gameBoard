@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import Carousel from "react-multi-carousel";
-// import Image from 'next/image'
+import Image from 'next/image'
+
 
 function Card(props) {
   const { link, isMoving } = props;
@@ -9,7 +10,7 @@ function Card(props) {
     <div
       className="card"
       style={{
-        margin: "10px 0px",
+        // margin: "10px 0px",
         border: "none",
         marginTop:0,
       }}
@@ -25,8 +26,12 @@ function Card(props) {
         src={link}
         alt={alt_text}
       /> */}
-      <img
+      <Image
           className="carousel-image"
+          // layout="fill"
+          width={1}
+          height={1}
+          layout="responsive"
           src={link}
           alt={alt_text}
           draggable={false}
@@ -68,20 +73,27 @@ export default function Carousels() {
       style={{ padding:0,left: "0", marginBottom: "30px" }}
     >
       <Carousel
-        swipeable
-        draggable
-        responsive={responsive}
+        // swipeable
+        // draggable
         ssr
-        infinite
+      infinite
+      // partialVisbile
+      deviceType="desktop"
+      itemClass="image-item"
+      responsive={responsive}
+      // autoPlay
+      // autoPlaySpeed={1000}
+        // responsive={responsive}
+        // ssr
+        // infinite = {true}
         // autoPlay
-        autoPlaySpeed={2000}
-        partialVisible
-        infinite={false}
-        beforeChange={() => setisMoving(true)}
-        afterChange={() => setisMoving(false)}
-        containerClass="first-carousel-container"
-        deviceType="desktop"
-        itemClass="image-item"
+        // autoPlaySpeed={2000}
+        // partialVisible
+        // beforeChange={() => setisMoving(true)}
+        // afterChange={() => setisMoving(false)}
+        // containerClass="first-carousel-container"
+        // deviceType="desktop"
+        // itemClass="image-item"
       >
         {imagesArray.map((imagePosition, idx) => (
           <Card key={idx} isMoving={isMoving} link={imagePosition} />

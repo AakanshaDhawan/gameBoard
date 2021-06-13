@@ -5,39 +5,19 @@ export default function MiddleCorporate() {
     <div className="container-fluid col-container">
       <Row style={{ paddingBottom: "2em" }}>
         <Col className="quote_corporate">
-          <div> 
-            <h2
-              style={{
-                fontWeight: "bold",
-                textTransform: "uppercase",
-                textShadow: "2px 2px grey",
-                textAlign: "center",
-                fontSize: "50px",
-              }}
-            >
-              "Board Games can teach Business"{" "}
-            </h2>
-            <h4
-              style={{
-                float: "right",
-                fontWeight: "bold",
-                textTransform: "uppercase",
-                textShadow: "2px 2px grey",
-              }}
-            >
-              - Harvard Business Review
-            </h4>
+          <div>
+            <h2 className="quote1">"Board Games can teach Business" </h2>
+            <h4 className="quote2">- Harvard Business Review</h4>
           </div>
           <div className="plain_text">
-            <p style={{textAlign:"center"}}>
+            <p style={{ textAlign: "center" }}>
               Board Games are fun and Exciting! They are a great way to detox
               digitally and spend quality time with friends and family. Many
               people do not know this, but board games can teach us essential
               business and life skills - you should just know what the right
-              games to pick! 
+              games to pick!
               <br />
-              We, at Game Boards, are here to do just that for
-              you!
+              We, at Game Boards, are here to do just that for you!
             </p>
           </div>
           <div>
@@ -49,7 +29,7 @@ export default function MiddleCorporate() {
           style={{ marginTop: "2em", backgroundColor: "#d9b38c" }}
         >
           <div>
-            <h2>Tell us your needs</h2>
+            <h2>Let the games begin!</h2>
           </div>
           <Form>
             <Row className="corporate-form-row">
@@ -137,6 +117,7 @@ export default function MiddleCorporate() {
             <Row>
               <Col style={{ display: "flex", justifyContent: "center" }}>
                 <Button
+                className="corporate-button"
                   type="submit"
                   style={{
                     borderRadius: 0,

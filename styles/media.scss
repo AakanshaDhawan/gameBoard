@@ -37,8 +37,19 @@
 }
 
 @media screen and (max-width: 991px) {
-  
-  .navbar-expand-lg{
+  #basic-navbar-nav {
+    background-color: lightgray;
+  }
+  .header {
+    padding: 1em;
+  }
+  .header-menu {
+    border-left: 0;
+  }
+  .header-menu:nth-last-child(1) {
+    border-right: 0;
+  }
+  .navbar-expand-lg {
     justify-content: space-between;
   }
 }
@@ -88,17 +99,29 @@
   }
 }
 
-@media screen and (max-width: 600px) {
-  #one {
-    float: none;
-    margin-right: 0;
-    width: auto;
-    border: 0;
-    border-bottom: 2px solid #000;
-  }
-}
+// @media screen and (max-width: 600px) {
+//   #one {
+//     float: none;
+//     margin-right: 0;
+//     width: auto;
+//     border: 0;
+//     border-bottom: 2px solid #000;
+//   }
+// }
 
 @media screen and (max-width: 500px) {
+  #basic-navbar-nav {
+    background-color: lightgray;
+  }
+  .header {
+    padding: 1em;
+  }
+  .header-menu {
+    border-left: 0;
+  }
+  .header-menu:nth-last-child(1) {
+    border-right: 0;
+  }
   .row-about {
     flex-direction: column;
   }
@@ -112,7 +135,45 @@
   }
   .middle-col {
     background-color: #5fd9c9;
-    margin: 5em;
+    margin: 5em 1em;
+    margin-right: 0;
+    margin-top: 2em;
+    .middle-subscribe {
+      margin: 0;
+      margin-bottom: 2em;
+    }
+    .instagram {
+      margin: 0;
+      margin-bottom: 2em;
+    }
+  }
+  .quote_corporate {
+    margin: 5em 0;
+    padding: 0;
+    .quote1 {
+      font-size: 1.5em;
+    }
+    .quote2 {
+      font-size: 1em;
+    }
+    img {
+      max-width: 100%;
+      max-height: 100%;
+    }
+  }
+  .corporate-form-row {
+    margin: 0 !important;
+  }
+  .corporate-button {
+    margin-bottom: 1em;
+  }
+  .live-middle {
+    margin: 1em !important;
+  }
+  .instagram-embed {
+    iframe {
+      max-width: 100% !important;
+    }
   }
   .about-middle {
     background-color: #fef2f0;
@@ -124,25 +185,25 @@
       margin-bottom: 15px;
     }
     .image-col {
-      margin-right:0 !important;
+      margin-right: 0 !important;
       margin-top: 0 !important;
     }
-    .text-col{
+    .text-col {
       padding-right: 0;
       margin: 0 !important;
     }
-    .image{
+    .image {
       height: 100%;
       width: 100%;
     }
   }
-  .live-middle{
-    margin: 4em !important;
-    .instagram-embed{
+  .live-middle {
+    // margin: 4em !important;
+    .instagram-embed {
       height: 600px !important;
-    iframe{
-      height: 550px !important;
+      iframe {
+        height: 550px !important;
+      }
     }
-    }
-  } 
+  }
 }

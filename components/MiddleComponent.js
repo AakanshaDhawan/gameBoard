@@ -7,7 +7,7 @@ export default function MiddleComponent() {
   return (
     <div className="middle-component col1-container" style={{ }}>
       <Row>
-        <Col id="one">
+        <Col>
           <BlogHome />
           <BlogHome />
           <BlogHome />

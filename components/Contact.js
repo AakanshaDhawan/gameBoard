@@ -6,7 +6,7 @@ export default function Contact() {
       <div className="container" style={{ padding: "5em 0" }}>
         <Row className="contact-form-row">
           <Col style={{ display: "flex", justifyContent: "center" }}>
-            <h1 style={{fontWeight:"bold"}}>Let me know what's on your mind</h1>
+            <h1 style={{fontWeight:"bold"}}>Hello! Lets connect.</h1>
           </Col>
         </Row>
         <Form>

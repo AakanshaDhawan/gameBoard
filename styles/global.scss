@@ -15,7 +15,7 @@ $header-height: 100px;
 }
 .header {
   padding: 0 6em;
-  background-color: #f1f1f1;
+  background-color: lightgray;
   .active {
     background-color: grey;
     color: white !important;
@@ -40,10 +40,14 @@ $header-height: 100px;
   margin-left: 5px;
   min-width: 100%;
   min-height: 100%;
-  width: 400px;
-  height: 600px;
+  width: 600px;
+  height: 500px;
 }
-
+.card{
+  margin-left: 5px;
+  // width: 600px;
+  // height: 500px;
+}
 
 .first-carousel-container li:first-child img{
   margin-left: 0;

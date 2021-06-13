@@ -5,7 +5,7 @@ import { faInstagram } from "@fortawesome/free-brands-svg-icons";
 
 function Header(props) {
   return (
-    <Navbar style={{ backgroundColor: "white" }} expand="lg">
+    <Navbar sticky="top" style={{ backgroundColor: "white",padding:"1em 0" }} expand="lg">
       <Link href="/" passHref>
         <img src="/images/logo.png" alt="logo" width="90px" />
       </Link>

@@ -12,6 +12,7 @@ export default function CorporateEvents() {
           name="viewport"
           content="width=device-width, initial-scale=0.41, maximum-scale=1"
         />
+        <meta content="width=device-width, initial-scale=1" name="viewport" />
       </Head>
       <MiddleLive />
     </DefaultLayout>

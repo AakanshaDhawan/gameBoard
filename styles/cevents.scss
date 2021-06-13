@@ -1,5 +1,18 @@
 .quote_corporate {
   margin: 6em;
+  .quote1 {
+    font-weight: bold;
+    text-transform: uppercase;
+    text-shadow: 2px 2px grey;
+    text-align: center;
+    font-size: 50px;
+  }
+  .quote2 {
+    float: right;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-shadow: 2px 2px grey;
+  }
 }
 
 .plain_text {
@@ -8,6 +21,7 @@
 
 .corporate-form {
   margin-right: 2em;
+  border-radius: 20px;
   h2 {
     font-weight: bold;
     display: flex;
@@ -34,34 +48,32 @@
   }
 }
 
-
-.about-middle{
-    margin: 5em;
-    background-color: #fef2f0;
-    .text-col{
-        margin: 4em;
-        .title{
-            margin-top: 1em;
-            font-size: 3rem;
-            font-weight: bold;
-        }
-        p{
-            margin: 1em 0;
-        }
+.about-middle {
+  margin: 5em;
+  background-color: #fef2f0;
+  .text-col {
+    margin: 4em;
+    .title {
+      margin-top: 1em;
+      font-size: 3rem;
+      font-weight: bold;
     }
-    .image-col{
-        margin-top: 15em;
-        margin-right: -20em;
+    p {
+      margin: 1em 0;
     }
+  }
+  .image-col {
+    margin-top: 15em;
+    margin-right: -20em;
+  }
 }
 
-.live-middle{
+.live-middle {
   margin: 5em 15em;
-  .instagram-embed{
+  .instagram-embed {
     height: 750px;
-  iframe{
-    height: 710px;
-  }
+    iframe {
+      height: 710px;
+    }
   }
 }
-
