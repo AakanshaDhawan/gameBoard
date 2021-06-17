@@ -1,13 +1,13 @@
 import { useState } from "react";
 import { Row, Col, Form, Button } from "react-bootstrap";
 
-export default function MiddleCorporate() {
+export default function MiddleCatan() {
   var [firstName, setFirstName] = useState("");
   var [lastName, setLastName] = useState("");
   var [email, setEmail] = useState("");
-  var [company, setCompany] = useState("");
+  var [insta, setInsta] = useState("");
   var [phone, setPhone] = useState("");
-  var [budget, setBudget] = useState("");
+  var [referal, setReferal] = useState("");
   var [error, setError] = useState("");
 
   const changeHandle = (event) => {
@@ -20,78 +20,66 @@ export default function MiddleCorporate() {
     if (event.target.name == "lastname") {
       setLastName(event.target.value);
     }
-    if (event.target.name == "company") {
-      setCompany(event.target.value);
+    if (event.target.name == "insta") {
+      setInsta(event.target.value);
     }
     if (event.target.name == "phone") {
       setPhone(event.target.value);
     }
-    if (event.target.name == "budget") {
-      setBudget(event.target.value);
+    if (event.target.name == "referal") {
+        setReferal(event.target.value);
     }
   };
-  const handleSubmit=async(event)=>{
-    event.preventDefault()
-    const res= await fetch('http://localhost:8000/api/corporateEnquiry/', {
-        method: 'POST',
-        // We convert the React state to JSON and send it as the POST body
-        body: JSON.stringify({
-          email : email,
-          firstName: firstName,
-          lastName: lastName,
-          company: company,
-          phone: phone,
-          budget: budget
-        })
-      }).then(function(response) {
-        return response.json();
-      });
-      console.log(res.status)
-    if(res.status=== true){
-      setError("Thank you for enquiring")
-      setFirstName('')
-      setLastName('')
-      setCompany('')
-      setEmail('')
-      setPhone('')
-      setBudget('')
-    }else{
-      setError("Error in submitting")
+  const handleSubmit = async (event) => {
+    event.preventDefault();
+    const res = await fetch("http://localhost:8000/api/catan/", {
+      method: "POST",
+      // We convert the React state to JSON and send it as the POST body
+      body: JSON.stringify({
+        email: email,
+        firstName: firstName,
+        lastName: lastName,
+        insta: insta,
+        phone: phone,
+        referal: referal,
+      }),
+    }).then(function (response) {
+      return response.json();
+    });
+    console.log(res.status);
+    if (res.status === true) {
+      setError("Thank you for enquiring");
+      setFirstName("");
+      setLastName("");
+      setCompany("");
+      setEmail("");
+      setInsta("");
+      setReferal("");
+    } else {
+      setError("Error in submitting");
     }
-  }
+  };
 
   return (
     <div className="container-fluid col-container">
       <Row style={{ paddingBottom: "2em" }}>
-        <Col className="quote_corporate">
-          <div>
-            <h2 className="quote1">"Board Games can teach Business" </h2>
-            <h4 className="quote2">- Harvard Business Review</h4>
-          </div>
-          <div className="plain_text">
-            <p style={{ textAlign: "center" }}>
-              Board Games are fun and Exciting! They are a great way to detox
-              digitally and spend quality time with friends and family. Many
-              people do not know this, but board games can teach us essential
-              business and life skills - you should just know what the right
-              games to pick!
-              <br />
-              We, at Game Boards, are here to do just that for you!
-            </p>
-          </div>
-          <div>
-            <img src="/images/corporate_image1.jpg" alt="corporate photo" />
-          </div>
+        <Col className="">
+          <img
+            className="catan-image"
+            src="/images/image3.jpg"
+            alt="catan photo"
+            style={{ width: "100%", height: "100%", minWidth: "100px" }}
+          />
         </Col>
         <Col
           className="corporate-form"
-          style={{ marginTop: "2em", backgroundColor: "#d9b38c" }}
+          style={{ marginTop: "2em", backgroundColor: "#fcd8d1" }}
         >
           <div>
-            <h2>Let the games begin!</h2>
+            <h2 style={{ margin: "1em 0"}}>Let the games begin!</h2>
           </div>
           <Form onSubmit={handleSubmit}>
-            <Row className="corporate-form-row">
+            <Row className="catan-form-row">
               <Col>
                 <Form.Group controlId="formGroupFirstName">
                   <Form.Label className="corporate-form-label">
@@ -99,11 +87,10 @@ export default function MiddleCorporate() {
                   </Form.Label>
                   <Form.Control
                     required
-                    className="corporate-form-field"
                     type="text"
                     name="firstname"
                     value={firstName}
-                    onChange={(event)=>changeHandle(event)}
+                    onChange={(event) => changeHandle(event)}
                   />
                 </Form.Group>
               </Col>
@@ -114,33 +101,31 @@ export default function MiddleCorporate() {
                   </Form.Label>
                   <Form.Control
                     required
-                    className="corporate-form-field"
                     type="text"
                     name="lastname"
                     value={lastName}
-                    onChange={(event)=>changeHandle(event)}
+                    onChange={(event) => changeHandle(event)}
                   />
                 </Form.Group>
               </Col>
             </Row>
-            <Row className="corporate-form-row">
+            <Row className="catan-form-row">
               <Col>
-                <Form.Group controlId="formGroupCompany">
+                <Form.Group controlId="formGroupInsta">
                   <Form.Label className="corporate-form-label">
-                    Company *
+                    Instagram Handle *
                   </Form.Label>
                   <Form.Control
                     required
-                    className="corporate-form-field"
                     type="text"
-                    name="company"
-                    value={company}
-                    onChange={(event)=>changeHandle(event)}
+                    name="insta"
+                    value={insta}
+                    onChange={(event) => changeHandle(event)}
                   />
                 </Form.Group>
               </Col>
             </Row>
-            <Row className="corporate-form-row" style={{ marginTop: "20px" }}>
+            <Row className="catan-form-row" style={{ marginTop: "20px" }}>
               <Col>
                 <Form.Group controlId="formGroupEmail">
                   <Form.Label className="corporate-form-label">
@@ -148,16 +133,15 @@ export default function MiddleCorporate() {
                   </Form.Label>
                   <Form.Control
                     required
-                    className="corporate-form-field"
                     type="email"
                     name="email"
                     value={email}
-                    onChange={(event)=>changeHandle(event)}
+                    onChange={(event) => changeHandle(event)}
                   />
                 </Form.Group>
               </Col>
             </Row>
-            <Row className="corporate-form-row" style={{ marginTop: "20px" }}>
+            <Row className="catan-form-row" style={{ marginTop: "20px" }}>
               <Col>
                 <Form.Group controlId="formGroupPhone">
                   <Form.Label className="corporate-form-label">
@@ -165,28 +149,26 @@ export default function MiddleCorporate() {
                   </Form.Label>
                   <Form.Control
                     required
-                    className="corporate-form-field"
                     type="text"
                     name="phone"
                     value={phone}
-                    onChange={(event)=>changeHandle(event)}
+                    onChange={(event) => changeHandle(event)}
                   />
                 </Form.Group>
               </Col>
             </Row>
-            <Row className="corporate-form-row  " style={{ marginTop: "20px" }}>
+            <Row className="catan-form-row  " style={{ marginTop: "20px" }}>
               <Col>
-                <Form.Group controlId="formGroupBudget">
+                <Form.Group controlId="formGroupReffral">
                   <Form.Label className="corporate-form-label">
-                    Budget *
+                    Reffral Code *
                   </Form.Label>
                   <Form.Control
                     required
-                    className="corporate-form-field"
                     type="text"
-                    name="budget"
-                    value={budget}
-                    onChange={(event)=>changeHandle(event)}
+                    name="referal"
+                    value={referal}
+                    onChange={(event) => changeHandle(event)}
                   />
                 </Form.Group>
               </Col>
@@ -194,7 +176,7 @@ export default function MiddleCorporate() {
             <Row>
               <Col style={{ display: "flex", justifyContent: "center" }}>
                 <Button
-                className="corporate-button"
+                  className="corporate-button"
                   type="submit"
                   style={{
                     borderRadius: 0,
@@ -208,7 +190,15 @@ export default function MiddleCorporate() {
               </Col>
             </Row>
           </Form>
-          <p style={{display:"flex",justifyContent:"center",paddingTop:"20px"}}>{error}</p>
+          <p
+            style={{
+              display: "flex",
+              justifyContent: "center",
+              paddingTop: "20px",
+            }}
+          >
+            {error}
+          </p>
         </Col>
       </Row>
     </div>

@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import Carousel from "react-multi-carousel";
-import Image from 'next/image'
 
 
 function Card(props) {
@@ -26,12 +25,12 @@ function Card(props) {
         src={link}
         alt={alt_text}
       /> */}
-      <Image
+      <img
           className="carousel-image"
           // layout="fill"
           width={1}
           height={1}
-          layout="responsive"
+          // layout="responsive"
           src={link}
           alt={alt_text}
           draggable={false}

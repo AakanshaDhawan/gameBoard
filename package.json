@@ -3,8 +3,9 @@
   "version": "0.1.0",
   "private": true,
   "homepage": "https://aakanshadhawan.github.io/gameBoard/",
+  "proxy": "http://localhost:8000",
   "scripts": {
-    "dev": "next dev",
+    "dev": "node server.js",
     "predeploy": "next build  && next export",
     "deploy": "gh-pages -d build",
     "build": "next build  && next export",
@@ -15,6 +16,7 @@
     "@fortawesome/free-brands-svg-icons": "^5.15.3",
     "@fortawesome/react-fontawesome": "^0.1.14",
     "bootstrap": "^5.0.1",
+    "express": "^4.17.1",
     "gh-pages": "^3.2.0",
     "infinite-react-carousel": "^1.2.11",
     "next": "^10.2.3",
@@ -25,5 +27,8 @@
     "react-instagram-embed": "^2.0.0",
     "react-multi-carousel": "^2.6.3",
     "sass": "^1.34.1"
+  },
+  "devDependencies": {
+    "http-proxy-middleware": "^2.0.0"
   }
 }

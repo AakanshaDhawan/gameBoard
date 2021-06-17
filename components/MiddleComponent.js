@@ -8,9 +8,13 @@ export default function MiddleComponent() {
     <div className="middle-component col1-container" style={{ }}>
       <Row>
         <Col>
-          <BlogHome />
-          <BlogHome />
-          <BlogHome />
+        <img
+            // className="catan-image"
+            src="/images/catan-poster.jpg"
+            alt="catan poster"
+            style={{ width: "100%", height: "100%", minWidth: "100px" }}
+          />
+          {/* <BlogHome /> */}
         </Col>
         <Col className="middle-col">
           <Subscribe />

@@ -110,6 +110,10 @@
 // }
 
 @media screen and (max-width: 500px) {
+  .catan-image{
+    padding: 0;
+  }
+  .catan-form-row{margin:  0;}
   #basic-navbar-nav {
     background-color: lightgray;
   }
@@ -205,5 +209,12 @@
         height: 550px !important;
       }
     }
+  }
+  .carousel-image {
+    margin-left: 5px;
+    min-width: 100%;
+    min-height: 100%;
+    width: 400px;
+    height: 400px;
   }
 }

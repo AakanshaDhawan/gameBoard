@@ -1,0 +1,59 @@
+# version: '3.7'
+
+# services:
+#   db:
+#     image: "postgres:11"
+#     environment:
+#       - "POSTGRES_HOST_AUTH_METHOD=trust"
+#     volumes:
+#       - postgres_data:/var/lib/postgresql/data/
+#   web:
+#     build: 
+#       context: .
+#     command: python3 manage.py runserver 0.0.0.0:8000
+#     volumes:
+#       - ./backend:/code
+#     environment:
+#       - DEBUG=1
+#     ports:
+#       - 8000:8000
+#     depends_on:
+#       - db
+    
+
+# volumes:
+#   postgres_data:
+
+version: "3.7"
+
+services:
+  db:
+    image: mdillon/postgis:11-alpine
+    environment:
+      - POSTGRES_DB=${DB_NAME:-gameboards}
+      - POSTGRES_USER=${DB_USER:-dbuser}
+      - POSTGRES_PASSWORD=${DB_PASSWORD:-dbpass}
+    volumes:
+      - ${DB_LOCAL_DATA:-./dbdata}:/docker-entrypoint-initdb.d/
+    ports:
+      - ${DB_LOCAL_PORT:-5433}:5432
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U ${POSTGRES_USER}"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+
+  server:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    command: python3 manage.py runserver 0.0.0.0:8000
+    volumes:
+      - ./backend:/code
+    expose:
+      - ${SERVER_PORT:-8000}
+    ports:
+      - ${SERVER_PORT:-8000}:${SERVER_PORT:-8000}
+    restart: on-failure
+    depends_on:
+      - db

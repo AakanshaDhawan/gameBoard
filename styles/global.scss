@@ -35,13 +35,16 @@ $header-height: 100px;
 .header-menu:nth-last-child(1) {
   border-right: 1px solid white;
 }
-
+.catan-image{
+  padding: 10em;
+  padding-bottom: 7em;
+}
 .carousel-image {
   margin-left: 5px;
   min-width: 100%;
   min-height: 100%;
   width: 600px;
-  height: 500px;
+  height: 600px;
 }
 .card{
   margin-left: 5px;
